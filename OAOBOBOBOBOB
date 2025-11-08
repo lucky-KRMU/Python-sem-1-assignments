@@ -1,0 +1,23 @@
+[33mcommit 5019e0a110dff0bf4ee6476eb665bca7a9d882d8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: lucky-KRMU <2501730142@krmu.edu.in>
+Date:   Sat Nov 8 10:05:48 2025 +0000
+
+    add calorie calculations and exceed limit warning system
+
+[33mcommit 7911d0746073a6a5d78cea89cc71512532cb9741[m
+Author: lucky-KRMU <2501730142@krmu.edu.in>
+Date:   Sat Nov 8 09:34:36 2025 +0000
+
+    add Input & Data Collection part
+
+[33mcommit 119425718148334b10d24bc0b413fde106e912e3[m
+Author: lucky-KRMU <2501730142@krmu.edu.in>
+Date:   Sat Nov 8 09:27:07 2025 +0000
+
+    update print message
+
+[33mcommit 19d4bff86aab52c467be5f36cc582847a0b696e3[m
+Author: lucky-KRMU <2501730142@krmu.edu.in>
+Date:   Sat Nov 8 09:21:19 2025 +0000
+
+    create necessary files for A-1

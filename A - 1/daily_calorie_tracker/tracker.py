@@ -58,3 +58,13 @@ if avgCal > dailyCalLimit:
     print("Warning! \nYour Calorie intake is higher than your dialy Calorie limit.")
 else:
     print("Your Calorie intake is normal. It is less than your daily Calorie limit.")
+
+# Printing the table 
+
+print("\n\nMeal Name \t Calorie")
+print("--------------------------")
+for i in range(mealNum):
+    print(f"{meal_list[i]} \t {calorie_list[i]}")
+print("---------------------------")
+print(f"Total:\t{totalCal}")
+print(f"Average:\t{round(avgCal,2)}")
