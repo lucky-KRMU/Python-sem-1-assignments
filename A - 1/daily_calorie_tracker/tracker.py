@@ -40,4 +40,21 @@ for i in range(mealNum):
     mealName = input("Enter the Meal: ") # Taking the input of the name
     mealCal = float(input("Enter the Calorie of the Meal: ")) # Taking the input of the calorie of that meal
 
+    meal_list.append(mealName)
+    calorie_list.append(mealCal)
 
+# Calorie Calculations
+
+totalCal = sum(calorie_list)    # Calculating the total sum of calories
+totalItems = len(calorie_list)  # calculating the total number of meals (For Average)
+
+avgCal = totalCal/totalItems # Calculating the average calories
+
+dailyCalLimit = float(input("Enter the daily Calorie limit: ")) # taking the input of daily calorie limit
+
+# Exceed Limit warning system
+
+if avgCal > dailyCalLimit:
+    print("Warning! \nYour Calorie intake is higher than your dialy Calorie limit.")
+else:
+    print("Your Calorie intake is normal. It is less than your daily Calorie limit.")
