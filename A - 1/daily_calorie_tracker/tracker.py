@@ -3,6 +3,8 @@
 # Date: November 8th, 2025
 # Project title: Daily Calorie Tracker (CLI)
 
+import datetime
+
 # Creating a welcome string
 welcome_str = ''' 
 #===============================#
@@ -54,10 +56,13 @@ dailyCalLimit = float(input("Enter the daily Calorie limit: ")) # taking the inp
 
 # Exceed Limit warning system
 
+comparison_message = ""
+
 if avgCal > dailyCalLimit:
-    print("Warning! \nYour Calorie intake is higher than your dialy Calorie limit.")
+    comparison_message = "Warning! \nYour Calorie intake is higher than your dialy Calorie limit."
 else:
-    print("Your Calorie intake is normal. It is less than your daily Calorie limit.")
+    comparison_message = "Your Calorie intake is normal. It is less than your daily Calorie limit."
+print(comparison_message)
 
 # Printing the table 
 
@@ -68,3 +73,33 @@ for i in range(mealNum):
 print("---------------------------")
 print(f"Total:\t{totalCal}")
 print(f"Average:\t{round(avgCal,2)}")
+
+# Bonus task (Saving data in the file)
+# Ask user if they want to save the report 
+user_wish = input("\nDo you want to Save this report to a file? (Y/N): ").lower().strip()
+
+if user_wish == 'y':
+    file_name = 'calorie_log.txt'
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
+    
+    # Removed try-except block for simpler structure
+    with open(file_name, 'w') as file:
+        
+        file.write("="*40 + "\n")
+        file.write(f"Session Log - {timestamp}\n")
+        file.write("="*40 + "\n\n")
+        
+        file.write(f"{'Meal Name':<20}{'Calories':>10}\n")
+        file.write("-" * 30 + "\n")
+        
+        for name, calories in zip(meal_list, calorie_list):
+            file.write(f"{name:<20}{calories:>10.1f}\n")
+            
+        file.write("\n" + "-" * 30 + "\n")
+        file.write(f"{'Total:':<20}{totalCal:>10.1f}\n")
+        file.write(f"{'Average:':<20}{avgCal:>10.2f}\n")
+        file.write("\nDaily Calorie Limit: " + str(dailyCalLimit) + "\n")
+        file.write("Status: " + comparison_message + "\n")
+        file.write("="*40 + "\n")
+            
+    print(f"🎉 Session log successfully saved to **{file_name}**.")
