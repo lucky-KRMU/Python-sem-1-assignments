@@ -79,11 +79,10 @@ print(f"Average:\t{round(avgCal,2)}")
 user_wish = input("\nDo you want to Save this report to a file? (Y/N): ").lower().strip()
 
 if user_wish == 'y':
-    file_name = 'calorie_log.txt'
+    file_name = 'data.txt'
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
     
-    # Removed try-except block for simpler structure
-    with open(file_name, 'w') as file:
+    with open(file_name, 'a+') as file:
         
         file.write("="*40 + "\n")
         file.write(f"Session Log - {timestamp}\n")

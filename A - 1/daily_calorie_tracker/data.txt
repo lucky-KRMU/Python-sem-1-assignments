@@ -1,0 +1,53 @@
+========================================
+Session Log - 2025-11-11 19:10:24
+========================================
+
+Meal Name             Calories
+------------------------------
+Breakfast                 80.0
+Dinner                   230.0
+
+------------------------------
+Total:                   310.0
+Average:                155.00
+
+Daily Calorie Limit: 160.0
+Status: Your Calorie intake is normal. It is less than your daily Calorie limit.
+========================================
+========================================
+Session Log - 2025-11-11 19:14:03
+========================================
+
+Meal Name             Calories
+------------------------------
+Breakfast                130.0
+Lunch                    120.0
+Dinner                   240.0
+
+------------------------------
+Total:                   490.0
+Average:                163.33
+
+Daily Calorie Limit: 140.0
+Status: Warning! 
+Your Calorie intake is higher than your dialy Calorie limit.
+========================================
+========================================
+Session Log - 2025-11-11 19:14:50
+========================================
+
+Meal Name             Calories
+------------------------------
+Breakfast                120.0
+Brunch                   200.0
+Lunch                    300.0
+Dinner                   250.0
+
+------------------------------
+Total:                   870.0
+Average:                217.50
+
+Daily Calorie Limit: 200.0
+Status: Warning! 
+Your Calorie intake is higher than your dialy Calorie limit.
+========================================
